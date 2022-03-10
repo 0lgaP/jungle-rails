@@ -18,8 +18,9 @@
         </tr>
       </thead>
       <tbody>
-
-        <%= render @categories %>
+        <% @categories.each do |c| %>
+        <%= render 'category', category: c %>
+        <% end %>
 
       </tbody>
     </table>

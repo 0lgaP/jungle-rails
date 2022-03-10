@@ -6,6 +6,8 @@ class Admin::CategoriesController < ApplicationController
   end
 
   def show
+    @category = Category.name
+    @products = @category.count
   end
 
   def new
