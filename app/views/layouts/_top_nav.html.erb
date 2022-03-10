@@ -30,9 +30,10 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li> 
+        <li><a>
           <% if current_user %> Signed in as <%= current_user.name %> 
-            </li> 
+          </a>  
+          </li> 
             <li> 
           <%= link_to "Logout", '/logout' %>
             </li>
