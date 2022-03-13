@@ -104,18 +104,49 @@ RSpec.describe User, type: :model do
   end
 
   describe '.authenticate_with_credentials' do
+    #sign in works?
     it 'signs in a new user if email and password are correct' do
       @user = User.new({
         first_name: "Strong",
         last_name: "Bad",
-        email: "COOL@gmail.com", 
+        email: "cool@gmail.com", 
         password: "limozeen",
         password_confirmation: "limozeen"
       })
-      @user.save
-      @user2 = User.authenticate_with_credentials("COOL@gmail.com", "limozeen")
+      @user.save!
+      # byebug
+      @user2 = User.authenticate_with_credentials("cool@gmail.com", "limozeen")
       expect(@user).to eq(@user2)
     end
+    #sign in with different case emails
+    it 'signs in a new user if email case is different' do
+      @user = User.new({
+        first_name: "Strong",
+        last_name: "Bad",
+        email: "cool@gmail.com", 
+        password: "limozeen",
+        password_confirmation: "limozeen"
+      })
+      @user.save!
+      # byebug
+      @user2 = User.authenticate_with_credentials("CooL@gmail.Com", "limozeen")
+      expect(@user).to eq(@user2)
+    end
+    #sign in with before/after spaces in email
+    it 'signs in a new user if email case is different' do
+      @user = User.new({
+        first_name: "Strong",
+        last_name: "Bad",
+        email: "cool@gmail.com", 
+        password: "limozeen",
+        password_confirmation: "limozeen"
+      })
+      @user.save!
+      # byebug
+      @user2 = User.authenticate_with_credentials("       CooL@gmail.Com", "limozeen")
+      expect(@user).to eq(@user2)
+    end
+
 
   end
 
