@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
       @user.email = @user.email.strip.downcase
     if @user.save
-      session[:user_id] = user.id
+      session[:user_id] = @user.id
       redirect_to '/'
     else
       render 'new'
