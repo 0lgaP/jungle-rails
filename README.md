@@ -2,14 +2,12 @@
 
 Jungle is a mini e-commerce application built with Rails 4.2.
  
-##As a user 
-
+## As a user 
 You can log in or sign up, add to your cart, check out and see your order history.
 If you encounter errors, they will be displayed so you may correct your information.
 ![User Gif](https://raw.githubusercontent.com/0lgaP/jungle-rails/master/Readme_assets/jungle-sign-buy.gif)
 
-##As an admin 
-
+## As an admin 
 You can create products and categories as well as see your curent stats via the dashboard.
 ![Admin Gif](https://raw.githubusercontent.com/0lgaP/jungle-rails/master/Readme_assets/jungle-admin.gif)
 
