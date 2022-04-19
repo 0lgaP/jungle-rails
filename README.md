@@ -12,37 +12,38 @@ You can create products and categories as well as see your curent stats via the 
 ![Admin Gif](https://raw.githubusercontent.com/0lgaP/jungle-rails/master/Readme_assets/jungle-admin.gif)
 
 ## Contributions to Project
-Feature - Product Sold Out
-Sold out badge on product panel
-Disabled add to cart button if sold out
-Feature - Admin Category Routes & Creation
-Added ability for admin to create new categories
-Added list of currently existing categories
-Feature - User Authentication
-Added user table to database
-Implemented user registration & login
-Feature - Order Details Upon Checkout
-After successful order, user is now shown a page displaying detailed order info
-Feature - Receipts Delivered via Email
-User receives an email receipt after successful order
-Feature - Admin Authentication
-Implemented admin authentication to be able to access admin area
-Feature - Product Ratings & Reviews
-Added product reviews on product pages
-Users are able to add reviews when they are logged in
-Users are able to delete their own reviews
-Feature - Heroku deployment
-Deployed the web app onto Heroku
-https://radiant-lake-87083.herokuapp.com/
-Bug Fix - Checking out With Empty Cart
-User now no longer sees the checkout button when cart is empty
-Instead a message is shown telling them that their cart is currently empty
-Testing - Implemented Model Tests & Feature Tests
-Added model testing for users and products
-Test that user sees products on the homepage
-Test that a user can navigate to a product details page
-Test that a user can add a product to their cart
-Test that a user can succesfully login
+Feature - Product Sold Out <br>
+* Sold out badge on product panel 
+* Disabled add to cart button if sold out 
+
+Feature - Admin Category Routes & Creation <br>
+* Added ability for admin to create new categories
+* Added list of currently existing categories
+
+Feature - User Authentication <br>
+* Added user table to database
+* Implemented user registration & login
+
+Feature - Order Details Upon Checkout <br>
+* After successful order, user is now shown a page displaying detailed order info
+
+Feature - Admin Authentication <br>
+* Implemented admin authentication to be able to access admin area
+
+Feature - Error Message <br>
+* Detailed error messages appear when user has entered registration information that does not comply with the database requirements.
+
+Bug Fix - Checking out With Empty Cart <br>
+* User does not see the checkout button when cart is empty
+* Instead a message is shown telling them that their cart is currently empty
+
+Testing - Implemented Model Tests & Feature Tests <br>
+* Added model testing for users and products
+* Test that user sees products on the homepage
+* Test that a user can navigate to a product details page
+* Test that a user can add a product to their cart
+* Test that a user can succesfully login
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
