@@ -1,6 +1,6 @@
 # Jungle
 
-Jungle is a mini e-commerce application built with Rails 4.2.
+Jungle is a mini e-commerce application built with Rails 4.2. This project simulates inheriting an existing code base in a language/framework that you are not comfortable/familiar with, then impementing features and fixes.
  
 ## As a user 
 You can log in or sign up, add to your cart, check out and see your order history.
@@ -11,6 +11,38 @@ If you encounter errors, they will be displayed so you may correct your informat
 You can create products and categories as well as see your curent stats via the dashboard.
 ![Admin Gif](https://raw.githubusercontent.com/0lgaP/jungle-rails/master/Readme_assets/jungle-admin.gif)
 
+## Contributions to Project
+Feature - Product Sold Out
+Sold out badge on product panel
+Disabled add to cart button if sold out
+Feature - Admin Category Routes & Creation
+Added ability for admin to create new categories
+Added list of currently existing categories
+Feature - User Authentication
+Added user table to database
+Implemented user registration & login
+Feature - Order Details Upon Checkout
+After successful order, user is now shown a page displaying detailed order info
+Feature - Receipts Delivered via Email
+User receives an email receipt after successful order
+Feature - Admin Authentication
+Implemented admin authentication to be able to access admin area
+Feature - Product Ratings & Reviews
+Added product reviews on product pages
+Users are able to add reviews when they are logged in
+Users are able to delete their own reviews
+Feature - Heroku deployment
+Deployed the web app onto Heroku
+https://radiant-lake-87083.herokuapp.com/
+Bug Fix - Checking out With Empty Cart
+User now no longer sees the checkout button when cart is empty
+Instead a message is shown telling them that their cart is currently empty
+Testing - Implemented Model Tests & Feature Tests
+Added model testing for users and products
+Test that user sees products on the homepage
+Test that a user can navigate to a product details page
+Test that a user can add a product to their cart
+Test that a user can succesfully login
 ## Setup
 
 1. Run `bundle install` to install dependencies
