@@ -1,4 +1,5 @@
 # Jungle
+![jungle-sign-buy](https://user-images.githubusercontent.com/61428425/211402179-acb27bd3-e629-4053-8e8e-81a5db0e1a16.gif)
 
 Jungle is a mini e-commerce application built with Rails 4.2. This project simulates inheriting an existing code base in a language/framework that you are not comfortable/familiar with, then impementing features and fixes.
  
